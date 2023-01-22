@@ -75,19 +75,6 @@ app.post("/",function(req,res){
   }
 });
 
-
-  // if(req.body.submit==="Work Tasks"){
-  //   workItems.push(item);
-  //   res.redirect("/work");
-  // }
-  // else{
-  //   items.push(item);
-  //   res.redirect("/");
-  // }
-
-
-
-
 app.post("/remove",function(req,res){
   const idVal = req.body.checkbox;
   const head = req.body.header;
@@ -112,30 +99,3 @@ app.listen(process.env.PORT || 3000,function(){
   console.log("Running Successfully!");
 });
 
-// var day = date.getDay();
-// var dayValue="";
-// switch(day){
-//   case 0:
-//   dayValue="Sunday";
-//   break;
-//   case 1:
-//   dayValue="Monday";
-//   break;
-//   case 2:
-//   dayValue="Tuesday";
-//   break;
-//   case 3:
-//   dayValue="Wednesday";
-//   break;
-//   case 4:
-//   dayValue="Thursday";
-//   break;
-//   case 5:
-//   dayValue="Friday";
-//   break;
-//   case 6:
-//   dayValue="Saturday";
-//   break;
-//   default:
-//   dayValue="Invalid Case Occured";
-// }
